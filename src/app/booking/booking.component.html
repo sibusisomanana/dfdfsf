@@ -1,0 +1,72 @@
+<div class="main-container">
+<div class="container">
+
+        <div style="text-align:center">
+                <h1 >WORLD-CLASS LUXURY</h1><br><img class="logo" src="../../assets/logo.png"><br><h3>BOUTIQUE HOTEL</h3>
+                    <div class="rating">
+                         <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+            </div>
+    <fieldset>
+        <legend id="w">Personal Details</legend>
+        <label for="title">Title: </label><select name="title" required>
+                <option value=""></option>
+                <option value="title">Mr</option>
+                <option value="title">Mrs</option>
+                <option value="title">Miss</option>
+                <option value="title">Dr</option>
+                <option value="title">Adv.</option>
+                </select><br><br>
+        <label for="name">Full Name: </label><input type="text" name="fullName" id="name" required autofocus placeholder="First Name and Last Name" pattern="[a-zA-Z]{3,}" title="Please enter in more than three letters">&nbsp;
+        <label for="email">Email: </label><input type="text" name="email" id="email" required placeholder="Your email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter in a valid email address">&nbsp;
+        <label for="phone">Phone: </label><input type="tel" name="phone" id="phone" required placeholder="Please enter in your phone number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Please enter in a phone number in this format: ### ### ####">&nbsp;
+        <label for="country">Country: </label><select name="country" required>
+            <option value=""></option>
+            <option value="SA">SA</option>
+            <option value="US">US</option>
+            <option value="UK">UK</option>
+            <option value="AUS">AUS</option>
+            </select>
+            <br>
+            <p>Who are you booking for?</p>
+            <input id="mainGuest" type="radio" name="guest" value="mainGuest"><label for="mainGuest">I am the main guest: </label><br>
+            <input id="someone" type="radio" name="guest" value="someone"><label for="someone">Booking is for someone else: </label>
+            <p>Are you travelling for work?</p>
+            <input type="radio" name="yes" value="yes">Yes<br>
+            <input type="radio" name="yes" value="no">No<br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Standard Suite: </legend>
+                <p style="color: orange"><b>FREE cancellation</b><i style="color:white; border-bottom: 1px dotted red"> in two weeks before</i></p>
+                <p style="color: orange">You can cancel or change your booking easily and for free! Simply follow the link from your confirmation email.</p>
+                <span class="label bathroom">Ensuite bathroom</span>&nbsp;&nbsp;
+                <span class="label tv">Flat-screen TV</span> 
+                <hr align="left" width="100%" color="ORANGE"> 
+                <h3>You can include:</h3>
+                <input type="checkbox" name="extra1" value="breakfast"><b style="color:white">Breakfast</b><br>
+                <input type="checkbox" name="extra2" value="shuttle"><b style="color: white"> I'm interested in requesting an airport shuttle</b><br>
+                <input type="checkbox" name="extra3" value="taxi"><b style="color: white">Want to book a private taxi in advance?</b><br>
+                <input type="checkbox" name="extra4" value="breakfast"><b style="color: white">I'm interested in renting a car</b><br>
+            </fieldset>
+            <br>
+            <fieldset>
+            <legend>Booking Details: </legend>
+            <label for="date">Booking date: </label><input type="date" name="date" min="2019-07-02">
+            <label for="numberOfGuests">Number of Guests</label><input type="number" name="numberOfGuest" min="1" max="6">
+            <p>Do you require meals?</p>
+            <label for="yesMeals">Yes: </label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
+            <label for="noMeals">No: </label><input id="noMeals" type="radio" name="meals" value="noMeals">
+            <br>
+            <label for="balcony">Do you require a balcony: </label><input type="checkbox" name="balcony" value="yes" checked>
+            <br><br>
+            <div class="button">
+                    <button routerLink="/submit" routerLinkActive="active" type="submit" >Continue</button>&nbsp;&nbsp;&nbsp;<button routerLink="/services" routerLinkActive="active" type="back" >Back</button>
+            </div>
+            </fieldset>
+
+
+    
+           
+            </div>
+</div>

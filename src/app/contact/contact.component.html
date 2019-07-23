@@ -1,0 +1,55 @@
+<html>
+  <div class="main-container">
+        <div class="container">
+        <header>
+                <nav class="sidevav">
+                    <img class="logo" src="../../assets/logo.png">
+                    <a routerLink="/home" class="w3-button w3-bar-item">Home</a>
+                    <a routerLink="/services" class="w3-button w3-bar-item">Services</a>
+                    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+                  </nav>
+                  <br>
+        </header>
+        <body>
+
+                <h3>Contact Form</h3>
+                
+                <div class="msgwrap">
+                  <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                      <option value=""></option>
+                      <option value="sa">SA</option>
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                    </select>
+                
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                
+                  </form>
+
+                  <div class="button">
+                      <button type="background-color:green" onclick="alert('Thank you for cantacting us, we will get back to you!')">Submit</button>
+                  </div>
+                </div>
+                <div class="contacts" align="center">
+                    <h4>Contacts</h4>
+                    <p>THE VINTAGE LAXURY BOUTIQUE<br>
+                        The Glen, Kinsale,<br>
+                        County Cork,<br>
+                        South Africa<br>
+                        Tel. ++27 (0)21 4774558<br>
+                        Email: vintagehotel.info@gmail.com</p>
+                </div>
+        </body>
+        </div>
+        </div>
+</html>

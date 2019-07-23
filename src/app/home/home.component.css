@@ -1,0 +1,123 @@
+.main-container{
+  background-image: url(../../assets/view.png);
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height:100%;
+  border:1px solid #8D8D8D;
+  background-color: white;
+  }
+  body{
+    text-align: center;
+  }
+  .sidevav{
+    background-color: orange;
+    display: flex;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: silver;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  .logo{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 10%;
+    overflow: auto;
+    font: bold;
+  } 
+  header nav a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  header nav a.active {
+    background-color:  orange;
+    color: white;
+  }
+  header nav a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .slider{
+    width: 950px;
+    height:600px;
+    background: url(../../assets/pexels-pool.jpeg);
+    background-size: cover;
+    margin: 20px auto;
+    animation: slide 50s infinite;
+    overflow: hidden;
+    }
+  .sliderchild{
+    height: 500px;
+    width: 500px;
+  }
+  .imagecon{
+    height: 500px;
+    width: 20;
+    background-color: gray; 
+    float: left;
+    line-height: 500px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: calibri; 
+  }
+  @keyframes slide{
+    40%{
+    background: url(../../assets/view.png);
+     background-size: cover;
+  }
+    40%{
+    background: url(../../assets/pexels-bedroom.jpeg);
+    background-size: cover;
+  }
+    60%{
+    background: url(../../assets/pexels-out.jpeg);
+    background-size: cover;
+  }
+    80%{
+    background: url(../../assets/pexels-inside.jpeg);
+    background-size: cover;
+  }
+    100%{
+      background: url(../../assets/pexels-food2.jpeg);
+      background-size: cover;
+  } 
+  }

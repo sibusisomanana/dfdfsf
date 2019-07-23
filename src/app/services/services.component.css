@@ -1,0 +1,243 @@
+.main-container{
+  
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1531514910867-8d1ca7505f55?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+}
+.container{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height:100%;
+  border:1px solid #8D8D8D;
+  background-color: white;
+  }
+.sidevav{
+  background-color: orange;
+  display: flex;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  }
+  
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  }
+   
+.sidebar a.active {
+  background-color: white;
+  color: white;
+  }
+  
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  }
+header nav a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  }
+header nav a.active {
+  background-color: orange;
+  color: white;
+  }
+header nav a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  }
+.logo{
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 10%;
+  overflow: auto;
+  font: bold;
+}
+.name{
+    text-align: center;
+    line-height: 0;
+    
+}
+.btn-group button {
+  background-color: orange; /* Green background */
+  border: 1px solid white; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: center; /* Float the buttons side by side */
+  text-align: center;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: orange;
+}
+/* .book { 
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  } */
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .columns {
+    float: center;
+    width: 33.3%;
+    padding: 8px;
+  }
+
+  
+  .btn {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ body{
+  text-align: center;
+  }
+  .slider{
+  width: 950px;
+  height: 600px;
+  background: url(../../assets/pexels-bedroom1.jpeg);
+  background-size: cover;
+  margin: 20px auto;
+  animation: slide 50s infinite;
+  overflow: hidden;
+  }
+  .sliderchild{
+  height: 500px;
+  width: 500px;
+  }
+  .imagecon{
+  height: 500px;
+  width: 20;
+  float: left;
+  line-height: 500px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: calibri;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .column {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    height: 300px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  table {
+    border: 1px;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;    
+  }
+  @keyframes slide{
+  10%{
+  background: url(../../assets/pexels-bedroom3.jpeg);
+   background-size: cover;
+  }
+  20%{
+  background: url(../../assets/pexels-bedroom4.jpeg);
+  background-size: cover;
+  }
+  30%{
+  background: url(../../assets/pexels-dinning.jpeg);
+  background-size: cover;
+  }
+  40%{
+  background: url(../../assets/pexels-eatingroom.jpeg);
+  background-size: cover;
+  }
+  50%{
+    background: url(../../assets/pexels-out.jpeg);
+    background-size: cover;
+  }
+  60%{
+      background: url(../../assets/pexels-nearby.jpeg);
+      background-size: cover;
+  }
+  70%{
+    background: url(../../assets/pexels-food.jpeg);
+    background-size: cover;
+  }
+  80%{
+    background: url(../../assets/pexels-food2.jpeg);
+    background-size: cover;
+  }
+  90%{
+    background: url(../../assets/pexels-food3.jpeg);
+    background-size: cover;
+  }
+  100%{
+    background: url(../../assets/pexels-sitting.jpeg);
+    background-size: cover;
+  }
+}

@@ -1,0 +1,127 @@
+.main-container{
+
+  background-image: url(../../assets/view.png);
+  background-size: cover;
+  font-family: 'Questrial', sans-serif;
+
+}
+.container{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height:100%;
+  border:1px solid rgb(14, 13, 13);
+ background-color: orange;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+      }
+  .action_page, label{
+      color: rgb(252, 249, 249);
+  }
+  .internal{
+      background-color: white;
+  }
+  .bathroom{
+      background-color: orangered;
+      color: white;
+  }
+  .tv{
+      background-color: orangered;
+      color: white;
+  }
+  .logo{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 10%;
+    overflow: auto;
+    font: bold;
+  }
+ 
+/* Elements */
+/* -------- */
+html {
+  line-height: 1.5;
+  text-align: center;
+}
+a { text-decoration: none; }
+
+/* Layout */
+/* ------ */
+h1.welcome, .button-bar {
+  margin: auto;
+  height: auto; 
+}
+
+.button-bar {
+  background: none;
+  padding: 2%;
+}
+
+/* General Button */
+/* -------------- */
+.button {
+  position: relative;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: transparent;
+  color: blue;
+  font-size: 18px;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+.button:hover { background: ORANGE; }
+
+/* Arrow Buttons */
+/* ------------- */
+.next::after, .prev::after { border-style: solid; }
+
+/* Next Button */
+/* ----------- */
+.next::after {
+  right:20px;
+  border-width: 2px;
+  border-color: transparent transparent transparent;
+}
+
+.next:hover::after {
+  border-left-color: button-bg-hover-color;
+}
+
+/* Prev Button */
+/* ----------- */
+.prev::after {
+  left: button-height;
+  border-color: transparent button-bg-color transparent transparent;
+  border-width: button-height / 2;
+}
+.button {
+  background-color: ORANGE;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+} 
+
+#submit{
+  font-size: 30px;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: ORANGE;
+}
+
+  
